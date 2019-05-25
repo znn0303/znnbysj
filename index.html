@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <audio src="./cbg.mp3" id="myAudio" autoplay="autoplay" controls="controls" hidden="true"></audio>
+    <div id="page">
+        <div id="yard"><canvas id="canvas" height="600px" width="800px"></canvas></div>
+        <div id="help">
+            <div id="mark">得分：<span id="mark_con"></span>
+                <span style="float:right">最高分：<strong id="score">0</strong></span>
+            </div>
+            <div id="helper">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="keydown(38);">上</button></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="keydown(37);">左</button></td>
+                        <td><button onclick="keydown(80);" id="pause">暂停</button></td>
+                        <td><button onclick="keydown(39);">右</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="keydown(40);">下</button></td>
+                        <td></td>
+                    </tr>
+                </table><a href="demo.html">再玩一次</a>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center;">
+</div> 
+<script src="demo.js"></script>
+
+</body>
+</html>
